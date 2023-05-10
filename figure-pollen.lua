@@ -1,4 +1,3 @@
-
 function Image(img)
       local stringify = pandoc.utils.stringify
       if img.classes:find('figure',1) then
@@ -14,4 +13,3 @@ function Image(img)
         return pandoc.Image(caption,src,nil,"fig:" .. figid)
       end
 end
-
